@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
-import RNModuleTemplateModule, { Counter } from 'react-native-module-template'
+import RNExampleModule, { Counter, LoanModule } from 'rn-lib-example'
 
 const App = () => {
   useEffect(() => {
-    console.log(RNModuleTemplateModule)
+    console.log(RNExampleModule)
   })
 
-  return <Counter />
+  // return <Counter />
+  return <LoanModule />
 }
 
 export default App
