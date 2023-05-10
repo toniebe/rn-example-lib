@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react'
-import RNExampleModule, { Counter, LoanModule } from 'rn-lib-example'
+import React, { Fragment, useEffect } from 'react'
+import RNExampleModule, { Counter} from 'rn-lib-example'
+import CoreModule from './Router/CoreModule'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const App = () => {
   useEffect(() => {
     console.log(RNExampleModule)
   })
 
-  // return <Counter />
-  return <LoanModule />
+  // return <LoanRouter />
+  return <CoreModule />
 }
 
 export default App

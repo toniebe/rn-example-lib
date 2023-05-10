@@ -5,7 +5,9 @@ import { navigationProps } from '../types/navigationProps'
 
 const LoanHomeContainer = ({ navigation }: navigationProps) => {
   return (
-    <LoanHomePresenter actionDetail={() => navigation.navigate('LoanDetail')} />
+    <LoanHomePresenter
+      actionDetail={() => navigation.navigate('LoanModuleDetail')}
+    />
   )
 }
 
